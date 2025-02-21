@@ -2064,7 +2064,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // development
         const devUrl = "http://localhost:3000"
 
-        const currentUrl = devUrl;
+        const currentUrl = prodUrl;
 
         const quickSearchUrl = currentUrl + '/api/quick-search';
 
