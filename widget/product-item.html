@@ -9,23 +9,17 @@
                     .product-details-wrapper {
                         display: flex;
                         flex-direction: column;
+                        gap: 10px
                     }
                 }
             </style>
 
             <div class="label-block">
-                <style>
-                    @media (min-width: 768px) {
-                        .label-block {
-                            margin-bottom: -30px;
-                            margin-top: 0;
-                        }
-                    }
-                </style>
                 {{labelBlock}}
             </div>
 
-            <p class="product-name" style="font-size: 14px;">{{name}}</p>
+            <p class="product-name" style="font-size: 14px; ">
+                {{name}}</p>
 
         </div>
 
