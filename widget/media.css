@@ -1,0 +1,180 @@
+.left-column {
+    flex-direction: column;
+    max-height: 100%;
+}
+
+
+.category-accordion {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    display: none;
+
+    flex-direction: column;
+
+    max-height: 50%;
+    width: 300px;
+    
+
+}
+
+.category-accordion-content {
+    display: block;
+
+}
+
+.category-accordion.collapsed .category-accordion-content {
+    display: none;
+
+}
+
+.category-accordion-header {
+    background: #eee;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.category-accordion-content {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.widget-overlay {
+    display: none;
+    
+    position: fixed;
+    
+    top: 0;
+    
+    left: 0;
+    
+    width: 100vw;
+    
+    height: 100vh;
+    
+    z-index: 9998;
+    
+
+    
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+
+    
+    pointer-events: auto;
+}
+
+@media (max-width: 1000px) {
+
+    .categories-container {
+        width: 100%;
+
+        max-height: 100%;
+
+        overflow-y: auto;
+
+        background-color: #f9f9f9;
+
+        box-sizing: border-box;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .categories-container {
+        width: 60%;
+
+        max-height: 100%;
+
+        overflow-y: auto;
+
+        background-color: #f9f9f9;
+
+
+        box-sizing: border-box;
+    }
+
+}
+
+
+@media (max-width: 1100px) {
+    .main-content-container {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+
+        width: 100%;
+
+    }
+
+    .categories-container {
+        width: 100%;
+
+        max-height: 100%;
+
+        overflow-y: auto;
+
+        background-color: #f9f9f9;
+
+        box-sizing: border-box;
+    }
+
+    .widget-result-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+
+        flex-grow: 1;
+        overflow-y: auto;
+        background-color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+
+
+    .category-accordion-content {
+        overflow-y: auto;
+        flex: 1;
+        max-height: 200px;
+    }
+
+    .filter-container {
+        display: none;
+        width: 100%;
+    }
+
+    .category-accordion-header {
+        width: 100%;
+    }
+
+    .category-accordion {
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        display: none;
+
+        flex-direction: column;
+        max-height: 150px;
+
+        width: 100%;
+    }
+
+    .left-column {
+        flex-direction: column;
+    }
+
+    .filter-container {
+        max-height: 150px;
+    }
+
+}

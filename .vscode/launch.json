@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "firefox",
+      "request": "launch",
+      "name": "Launch Firefox Developer Edition",
+      "url": "http://localhost:5500", // Update if using Live Server or other local server
+      "webRoot": "${workspaceFolder}",
+
+      "sourceMaps": true, // Enable source maps for debugging
+      "reloadOnAttach": true
+    }
+  ]
+}

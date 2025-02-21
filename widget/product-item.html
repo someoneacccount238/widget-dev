@@ -1,0 +1,45 @@
+<div class="product-item">
+    <img src="{{pictureUrl}}" alt="{{name}}" class="product-picture" />
+
+    <div class="product-details">
+        <div class="product-details-wrapper">
+
+            <style>
+                @media (min-width: 768px) {
+                    .product-details-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            </style>
+
+            <div class="label-block">
+                <style>
+                    @media (min-width: 768px) {
+                        .label-block {
+                            margin-bottom: -30px;
+                            margin-top: 0;
+                        }
+                    }
+                </style>
+                {{labelBlock}}
+            </div>
+
+            <p class="product-name" style="font-size: 14px;">{{name}}</p>
+
+        </div>
+
+        <div class="price-container">
+
+            <span class="old-price {{styleClass}}">{{oldPrice}}</span>
+
+
+            <span class="new-price">{{price}} {{currencyId}}</span>
+        </div>
+
+
+        <span class="code" style="margin-top: 5px;">код: {{code}}</span>
+
+        <p class="product-presence">{{presence}}</p>
+    </div>
+</div>
