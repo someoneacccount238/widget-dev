@@ -1231,7 +1231,7 @@ class ProductSearchWidget {
 
 
             if (this.exactProducts)
-                this.allProducts = [...this.exactProducts, ...products];
+                this.allProducts = [...products];
             else {
                 this.allProducts = products;
             }
