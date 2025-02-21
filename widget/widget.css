@@ -276,5 +276,6 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: start;
+                margin-bottom: 0;
             }
         }
