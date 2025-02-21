@@ -269,7 +269,7 @@
         
         @media (min-width: 768px) {
             .product-label {
-                margin-bottom: -10;
+                margin-bottom: -10px;
                 margin-top: 0;
             }
             .label-block {
@@ -277,6 +277,5 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: start;
-                margin-bottom: -10px;
             }
         }
